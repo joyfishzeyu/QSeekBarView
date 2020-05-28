@@ -130,7 +130,7 @@
 
 - (CGPoint)getStartPoint{
     
-    CGFloat x = 25 + (_current - 1) * (_pointSpace + 6) + 8;
+    CGFloat x = 25 + (_current - 1) * (_pointSpace + 6) + (_current !=0 && _current != _max ? 8 : 0);
     
     CGFloat y = (self.frame.size.height - _lineHeight) * 0.5;
   
